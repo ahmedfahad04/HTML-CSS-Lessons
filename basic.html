@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta text is used to index web pages through SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a description of the page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Basic HTML Training</title>
+
+    <!-- link to external CSS file -->
+    <link rel="stylesheet" href="basic.css">
+
+    <!-- link to external JavaScript file -->
+    <script src="basic.js"></script>
+
+    <!-- Internal CSS Linking -->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- The HTML element is everything from the start tag to the end tag: -->
+    <!-- HTML Tags: <p> -->
+    <!-- HTML Heading Tags <h1> -->
+    <h3>heading is used to show structured content</h3>
+    <h4>Also it helps in SEO</h4>
+
+    <hr>
+
+   
+    <!-- Dummy Text (Lorem5) in paragraph tag -->
+    <p>Lorem ipsum <strong>Hello</strong> dolor sit amet. <em>Emphasized Text</em>Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Id, quis.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat quod culpa, ab doloribus vel <b>Lorem,
+            ipsum.</b> corporis voluptatem ipsam illum quibusdam omnis <br> consequuntur
+        <hr> temporibus consectetur optio error nisi numquam odio aut qui nulla? Laborum, ad itaque est amet a excepturi
+        quod.
+    </p>
+
+    <p style="color:rgb(86, 18, 233)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error optio animi
+        incidunt ab pariatur velit.</p>
+
+    <p title="This is a Tool tip">The tool tip will be visible if we hover over this text</p>
+
+    <!-- HTML Links -->
+    <a href="https://toffeeshare.com/">ToffeShare</a>
+
+    <hr>
+
+    <!-- HTML Image -->
+    <img src="tour1.jpg" alt="Tour Image" width="300" height="300">
+
+    <hr>
+
+   
+    <!-- Preformatted text (where we want to display the text as it is) -->
+    <pre>
+    Twinkel Twinkel 
+    Little Star,
+    How I wonder
+    What you are... 
+    </pre>
+
+    
+    <!-- HTML Style  -->    
+    <p style="background-color:blueviolet; color:rgb(255, 255, 255); font-family:sans-serif; font-size:20px; text-align:center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+   
+    <!-- HTML Text Formating -->
+    <p>Lorem ipsum dolor <mark>Higlighted Text</mark> sit amet consectetur adipisicing <del>Deleted Text</del> elit.
+        <ins>Inserted Text</ins> Lorem, X<sup>2</sup> and H<sub>2</sub>0 oipsum dolor. <small>smol</small> Dolorum.
+    </p>
+
+    
+    <!-- HTML Quotation and Citation -->
+    <blockquote cite="https://https://en.wikipedia.org/wiki/Sass_(stylesheet_language)">Sass (short for syntactically
+        awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style
+        Sheets (CSS). SassScript is the scripting language itself. </blockquote>
+
+    <p style="border: 5px solid DodgerBlue"> Scientiest Says: <q>Megalodon (Otodus megalodon),[6][7][8] meaning "big
+            tooth", is an extinct species of mackerel shark that lived approximately 23 to 3.6 million years ago (Mya),
+            from the Early Miocene to the Pliocene epochs.[9]</q></p>
+
+    <h2>The <abbr title="Indian Cricket Councis">ICC</abbr> is a fraud </h2>
+
+    <address>
+        Written by Ahmed Fahad <br>
+        Visit me at: <a href="https://github.com/ahmedfahad04/">GitHub</a>
+    </address>
+
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+    <!-- Lists-->
+    <ul type="circle">
+        <li>HTML</li>
+        <ul type="disc">
+            <li>Elements</li>
+            <li>Tags</li>
+        </ul>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol type="a">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+   
+    <!-- Tables-->
+    <caption>User Identity</caption>
+    <Table style="width: 200px;">
+
+        <colgroup>
+            <col span="1" style="background-color:red ;">
+            <col span="2" style="background-color:yellow ;">
+        </colgroup>
+
+        <tr>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>Ahmed</td>
+            <td>Fahad</td>
+            <td style="text-align:right;">20</td>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>21</td>
+        </tr>
+
+    </Table>
+
+    
+    <!-- Forms and Input  -->
+    <form action="backend.php">
+
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            Roll: <input type="text">
+        </div>
+        <div>
+            Email: <input type="email" name="myemail" > <!-- here name defines the value of email in the backend file-->
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <div>
+            Salary: <input type="number" name="myBonus" id="">
+        </div>
+        <div>
+            Going? <input type="checkbox" name="response" checked>
+        </div>
+        <div>
+            Gender: Male <input type="radio" name="gender" checked> Female <input type="radio" name="gender" > 
+        </div>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+        <div>
+            About your self: <br> <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Cars</label>
+            <select name="mycar" id="car">
+                <option value="f">Ferrari</option>
+                <option value="a">Audi</option>
+                <option value="m" selected>MG</option>
+            </select>
+        </div>
+
+    </form>  <!-- backend.php is the file where the data will be stored-->
+
+   
+    <!-- Inline and Block Elements -->
+    <p>P is a block element</p>
+    <p>And this line takes a whole line, leaving no chance of multiple paragraph in one line</p>
+    <span>But span is called inline element</span>
+    <span>Here multiple span can reside in one line</span>
+    <hr>
+
+    <em style="border: 2px solid red;"> Is it inline? </em>
+    <em style="border: 2px solid red;"> yes it is</em>
+    <hr>
+
+    <li style="border: 2px solid blue;"> how about list item</li>
+    <li style="border: 2px solid blue;"> it's a block elemnt </li>
+    <hr>
+
+    <div style="border: 2px solid green;"> and div?</div>
+    <div style="border: 2px solid green;"> Right, it's block element </div>
+    <hr>
+
+    <img src="mac.jpg" alt="" width="300" height="300">
+    <img src="tour1.jpg" alt="" width="300" height="300">
+
+    <!-- ID and Class -->
+    <div id="mainBox" class="redBG"> <!-- multiple class can be added in space separated way -->
+        this is main box 
+    </div>
+
+    <!-- span.className and span#id -->
+    <!-- span.class1.class2 and press enter -->
+    <!-- span.class1.class2*4 and press tab -->
+    <span class="class1 class2">Class 1</span>
+    <span class="class1 class2">Class 2</span>
+    <span class="class1 class2">Class 3</span>
+    <span class="class1 class2">Class 4</span>    
+
+
+    <!-- HTML Entites -->
+    <!-- Characters that can't be written using keyboard are often writen using entities -->
+    <div class="container">
+        <p>This is a paragaraph with   &nbsp;   looong space </p>
+        <p>paragraph is writen like &lt;img&gt; </p>
+        <p>copyright is &copy;</p>
+    </div>
+
+
+    <!-- semantic tags  -->
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <span>Home</span>
+        <span>address</span>
+        <span>About</span>
+    </nav>
+    <main>
+        <a href="https://www.w3schools.com/html/html5_semantic_elements.asp"> Semantic Tags </a>
+    </main>
+
+</body>
+
+</html>
