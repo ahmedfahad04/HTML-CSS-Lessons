@@ -1,0 +1,41 @@
+.img {
+   display: inline-block;
+   margin: 0px auto;
+   width: 350px;
+   margin-top: 210px;
+}
+
+.search-input {
+    display: block;
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    overflow: none;
+    padding-left: 10px;
+}
+
+.btn-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+.btn {
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #999;
+    cursor: pointer;
+}
