@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ecca3c510f.js" crossorigin="anonymous"></script>
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            background-color: rgb(0, 157, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            width: 605px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px 30px 25px;
+        }
+
+        .wrapper header {
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .wrapper .content {
+            margin: 35px 0;
+
+        }
+
+        .content .quote-area {
+            display: flex;
+            justify-content: center;
+        }
+
+        .quote-area .quote {
+            font-size: 21px;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .quote-area i {
+            font-size: 15px;
+        }
+
+        .quote-area i:first-child {
+            margin: 3px 10px 0 0;
+        }
+
+        .quote-area i:last-child {
+            margin: 0 0 3px 10px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .content .author {
+            display: flex;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        .author span:first-child {
+            margin: -7px 5px 0 0;
+        }
+
+        .author span:last-child {
+            font-style: italic;
+        }
+
+        .wrapper .buttons {
+            border-top: 2px solid #ccc;
+        }
+
+        .buttons .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .features ul {
+            display: flex;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .features ul li {
+            list-style: none;
+            margin: 0 5px;
+            height: 47px;
+            width: 47px;
+            border: 2px solid cornflowerblue;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: cornflowerblue;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .features ul li:hover {
+            color: #fff;
+            background-color: cornflowerblue;
+        }
+
+        .features .btn {
+            border: none;
+            outline: none;
+            padding: 10px 22px;
+            border-radius: 30px;
+            background-color: cornflowerblue;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid lightblue;
+        }
+
+        .features.btn.loading {
+            border: 2px solid lightblue;
+            color: #fff;
+            background-color: cornflowerblue;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>Quote of the day</header>
+
+        <div class="content">
+            <div class="quote-area">
+                <i class="fas fa-quote-left"></i>
+                <p class="quote">If a country is to be corruption free and become a nation of beautiful minds, I
+                    strongly feel there are three key societal members who can make a difference. They are the father,
+                    the mother and the teacher.</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>__</span>
+                <span class="name">Ronald Regan</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="features">
+                <ul>
+                    <li class="sound"><i class="fas fa-volume-up"></i></li>
+                    <li class="copy"><i class="fas fa-copy"></i></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i></li>
+                </ul>
+                <button class="btn">New Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
