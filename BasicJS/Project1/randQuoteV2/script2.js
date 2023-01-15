@@ -24,7 +24,7 @@ function randomQuote() {
 	.then((response) => response.json())
 	.then((result) => {
         quoteText.innerText = result.content;
-        quoteAuthor.innerText = result.originator.name;
+        quoteAuthor.innerHTML = result.originator.name;
         quoteBtn.innerText = "New Quote";
         quoteBtn.classList.remove("loading");
     })
