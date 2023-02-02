@@ -1,0 +1,18 @@
+p {
+    color: green; 
+    border-style: dotted;
+    font-size: 25px;
+    font-family: "Fira Code", Times, serif;
+    padding: 10px;
+}
+
+code {
+    BordeR-bottom: 2px solid blue;
+}
+
+Div {
+    width: 100px;
+    padding: 25px;
+    position: absolute;
+
+}

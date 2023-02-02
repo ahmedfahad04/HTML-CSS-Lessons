@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 5px solid red;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's see how to toogle display of an element</h1>
+    <p class="para">This is 2nd Paragraph</p>
+    
+    <button onclick="toggle1('p')">Toggle Paragraph</button>
+
+    <script>
+        
+        function toggle1(tagName) { 
+            let elem = document.querySelector(tagName);
+            
+
+            if(elem.style.display == "block"){
+                elem.style.display = "inline";
+                elem.innerText = "It's INLINE BRO";
+            } else{ 
+                elem.style.display = "block";
+                elem.innerText = "IT's Been BLOCKED";
+            }
+        }
+
+        // becareful about DOM Manupulation
+        // while changing style of an element
+        // you find found two word attributes
+        // eg. font-size, border-top etc.
+        // this, in DOM, will convert into
+        // fontSize, borderTop etc.
+
+        // GET ELEMENT BY ID is applicable to
+        // any kind of HTML element
+        // it's not confined to only document
+    </script>
+</body>
+
+</html>

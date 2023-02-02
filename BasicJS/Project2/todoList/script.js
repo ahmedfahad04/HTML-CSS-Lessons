@@ -1,16 +1,16 @@
-// function connectBtn() {
-//     let input = document.getElementById('name');
+function connectBtn() {
+    let input = document.getElementById('name');
 
-//     input.addEventListener("keypress", (event) => {
-//         if (event.key === "Enter") {
-//             event.preventDefault();
-//             document.getElementById('myBtn').click();
-//         }
+    input.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            listener();
+        }
 
-//     });
+    });
 
-//     // addBtn.removeEventListener("click", listener);
-// }
+    // addBtn.removeEventListener("click", listener);
+}
 
 // couldn't figure out how to connet key press with button click
 // the above function works but the button is recursively pressed
