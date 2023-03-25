@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Upload new File</title>
+<h1>Upload new File</h1>
+<form method=post enctype=multipart/form-data>
+  <input type=file name=file>
+  <input type=submit value=Upload>
+  <div style="background-color: aqua;"> 
+    <a href = {{url_for('download_file', name="merged.pdf")}} style="color: black;">Download</a>
+  </div>
+</form> 

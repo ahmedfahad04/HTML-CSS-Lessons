@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+    <style>
+        .download {
+            display: block;
+            text-decoration: none;
+            padding: 5px 10px;
+            width: 99%;
+            margin-top: 20px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div>
+        <h1>File Upload</h1>
+        <form action="{{ url_for('upload_files') }}" class="dropzone">
+    </div>
+
+    <div>
+        <!-- download button -->
+        <a href ={{url_for('download_file', name="merged.pdf")}} class="download">Download</a>
+    </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+  </body>
+</html>
