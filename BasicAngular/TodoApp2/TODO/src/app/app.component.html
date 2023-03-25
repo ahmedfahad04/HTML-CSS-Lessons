@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>TODO LIST</h2>
+
+  <form class="todo-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+      <input type="text" name="title" id="title" ngModel>
+
+    <div>
+      <button type="submit">Add</button>
+    </div>
+  </form>
+
+
+  <ul class="todo-list">
+    <li *ngFor="let todo of todos">
+      <div *ngIf="!this.todo.isCompleted">
+        <div>{{this.todo.title}}</div>
+        <div>
+          <button (click)="onComplete(this.todo.id)">Mark as Completed</button>
+          <button (click)="onDelete(this.todo.id)">Delete</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <br><br><br><br><br>
+
+  <h3>Completed List</h3>
+  <br>
+
+  <ul class="todo-list">
+  <li *ngFor="let todo of todos">
+    <div *ngIf="this.todo.isCompleted">
+      <div>{{this.todo.title}}</div>
+      <div>
+        <button (click)="onDelete(this.todo.id)">Delete</button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+</div>
