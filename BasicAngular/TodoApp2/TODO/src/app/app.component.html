@@ -1,23 +1,24 @@
 <div class="container">
   <h2>TODO LIST</h2>
 
-  <form class="todo-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
-
-      <input type="text" name="title" id="title" ngModel>
+  <form class="todo-form" #f="ngForm" (ngSubmit)="onAddItem(f)">
+    <input type="text" name="title" id="title" ngModel>
 
     <div>
-      <button type="submit">Add</button>
+      <button class="btn-floating waves-effect waves-light green"><i class="material-icons">add</i></button>
     </div>
   </form>
 
 
   <ul class="todo-list">
-    <li *ngFor="let todo of todos">
+    <li *ngFor="let todo of todoList">
       <div *ngIf="!this.todo.isCompleted">
         <div>{{this.todo.title}}</div>
         <div>
-          <button (click)="onComplete(this.todo.id)">Mark as Completed</button>
-          <button (click)="onDelete(this.todo.id)">Delete</button>
+          <button class="btn-floating waves-effect waves-light blue" (click)="onToggleDone(this.todo.id)"><i
+              class="material-icons">check</i></button>
+          <button class="btn-floating waves-effect waves-light red" (click)="onRemoveItem(this.todo.id)"><i
+              class="material-icons">delete</i></button>
         </div>
       </div>
     </li>
@@ -25,18 +26,19 @@
 
   <br><br><br><br><br>
 
-  <h3>Completed List</h3>
+  <h2>Completed List</h2>
   <br>
 
   <ul class="todo-list">
-  <li *ngFor="let todo of todos">
-    <div *ngIf="this.todo.isCompleted">
-      <div>{{this.todo.title}}</div>
-      <div>
-        <button (click)="onDelete(this.todo.id)">Delete</button>
+    <li *ngFor="let todo of todoList">
+      <div *ngIf="this.todo.isCompleted">
+        <div>{{this.todo.title}}</div>
+        <div>
+          <button class="btn-floating waves-effect waves-light red" (click)="onRemoveItem(this.todo.id)"><i
+              class="material-icons">delete</i></button>
+        </div>
       </div>
-    </div>
-  </li>
-</ul>
+    </li>
+  </ul>
 
 </div>
