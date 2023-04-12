@@ -1,0 +1,11 @@
+<div class="container-fluid p-3">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let user of all_users; let i=index" class="list-group-item">
+            <h3> Name: {{user.name}} </h3>
+            <p> Roll: {{user.roll}}</p>
+            <p> Contact No: {{user.contact_no}}</p>
+            <p> Email: {{user.email}}</p>
+        </li>
+    </ul>
+
+</div>

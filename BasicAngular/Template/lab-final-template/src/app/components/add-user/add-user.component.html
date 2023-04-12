@@ -1,0 +1,32 @@
+<div class="contianer p-5">
+    <div class="card bg-info text-dark">
+        <div class="card-body" style="font-size: 30px;">User Details</div>
+    </div>
+</div>
+
+<div class="container-fluid  p-5 my-5">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Full Name:</label>
+            <input type="name" formControlName="name" class="form-control" id="email" placeholder="Enter your name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="roll" class="form-label">Roll No:</label>
+            <input type="roll" formControlName="roll" class="form-control" id="roll" placeholder="Enter your roll no" name="roll">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="phone" class="form-label">Contact No:</label>
+            <input type="phone" formControlName="phone" class="form-control" id="phone" placeholder="Enter your phone number" name="phone">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" formControlName="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+</div>
