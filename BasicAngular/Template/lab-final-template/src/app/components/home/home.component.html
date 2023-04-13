@@ -1,7 +1,9 @@
-<div class="main">
-    <div class="heading">
-        <h2>Total User {{total_user}}</h2>
+<div class="home">
+    <div class="main">
+        <div class="heading">
+            <h2 style="color:aliceblue">Total User {{total_user}}</h2>
+        </div>
+        <button id="add-user" (click)="addUserNavigate()">Add User</button>
+        <button id="show-user" (click)="showUsersNavigate()">Show User List</button>
     </div>
-    <button id="add-user" (click)="addUserNavigate()">Add User</button>
-    <button id="show-user" (click)="showUsersNavigate()">Show User List</button>
-</div> 
+</div>

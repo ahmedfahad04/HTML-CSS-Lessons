@@ -5,7 +5,9 @@
             <p> Roll: {{user.roll}}</p>
             <p> Contact No: {{user.contact_no}}</p>
             <p> Email: {{user.email}}</p>
+            <img [src]="user.imageName" alt="image">
         </li>
     </ul>
 
+    <button (click)="clearCache()">Clear Data</button>
 </div>

@@ -1,10 +1,10 @@
 <div class="contianer p-5">
     <div class="card bg-info text-dark">
-        <div class="card-body" style="font-size: 30px;">User Details</div>
+        <div class="card-body" style="font-size: 20px;">User Details</div>
     </div>
 </div>
 
-<div class="container-fluid  p-5 my-5">
+<div class="container-fluid  px-5 mb-5">
     <form [formGroup]="userForm" (ngSubmit)="onSubmit()" ngNativeValidate>
         <div class="mb-3 mt-3">
             <label for="name" class="form-label">Full Name:</label>
@@ -25,6 +25,12 @@
         <div class="mb-3">
             <label for="pwd" class="form-label">Password:</label>
             <input type="password" formControlName="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="pic" class="form-label">Choose Your Picture:</label>
+            <br>
+            <input type="file" name="pic" id="pic" (change)="onFileSelection($event)">
+            <img [src]="url" alt="pic">
         </div>
 
         <button type="submit" class="btn btn-primary" >Submit</button>
