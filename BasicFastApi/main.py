@@ -20,6 +20,12 @@ def read_root():
 #         "item_id": item_id, "q": q
 #     }
 
+# confusing method age use korbo
+
+@app.post('/bool', response_model=bool)
+async def read_bopl():
+    return True
+
 @app.get("/items/{item_id}/{q}")
 async def read_item(item_id: int, q: str):
     return {
@@ -47,4 +53,5 @@ async def update_item(item: Item):
 @app.delete('/items/', response_model=Item)
 async def delete_item(item: Item):
     return item
+
 
