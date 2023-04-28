@@ -4,4 +4,5 @@ export class User {
     contact_no: string = '';
     email: string = '';
     password: string = '';
+    imageName: string = '';
 }

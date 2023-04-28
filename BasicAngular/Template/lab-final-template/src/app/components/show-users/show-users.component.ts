@@ -10,11 +10,19 @@ import { UserService } from 'src/app/services/user.service';
 export class ShowUsersComponent {
 
   all_users: User[] = [];
+  url: string | null = '';
 
   constructor(
     private userServices: UserService
-  ) { 
-    this.all_users = this.userServices.users;
+  ) {
+
+    this.all_users = this.userServices.getUsers();
+    console.log(this.all_users);
+
+    this.url = this.userServices.getImageUrl();
   }
+  
+  
+  clearCache(): any
 
 }
