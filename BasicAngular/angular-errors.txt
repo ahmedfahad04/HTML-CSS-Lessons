@@ -1,0 +1,2 @@
+1. Angular Firestore document error
+https://github.com/angular/angularfire/issues/3290

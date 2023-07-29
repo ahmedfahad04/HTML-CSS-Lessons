@@ -1,0 +1,119 @@
+.main {
+    font-family: Monaco;
+}
+
+h1 {
+    margin: 25px 15px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid black;
+    font-size: 40px;
+    font-family: Monaco;
+    font-weight: normal;
+    text-align: center;
+}
+
+.terminal-box {
+    font-size: 15px;
+    width: 900px;
+    height: 450px;
+    margin: 150px auto;
+    background-color: antiquewhite;
+    border: 5px solid purple;
+    border-radius: 8px;
+}
+
+.terminal-headline {
+    background-color: rgb(249, 219, 181);
+}
+
+.heading-icon {
+    display: inline-flex;
+    width: 100px;
+    height: 30px;
+    margin: 10px 5px 0 5px;
+}
+
+.heading-title {
+    display: inline-flex;
+    width: 650px;
+    height: 30px;
+    margin: 10px 5px 0 5px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: w700;
+}
+
+#box1 {
+    background-color: red;
+    border-radius: 150%;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+}
+
+#box2 {
+    background-color: rgb(252, 183, 55);
+    border-radius: 150%;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+}
+
+#box3 {
+    background-color: rgb(108, 217, 35);
+    border-radius: 150%;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+}
+
+.terminal-body {
+    margin: 5px 5px;
+    padding: 15px 15px 0 15px;
+    height: 370px;
+}
+
+#cmd-id {
+    color: darkred;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cmd-result {
+    display: inline-flex;
+    margin-top: 10px;
+    height: 370px;
+}
+
+#left-side {
+    height: 350px;
+    width: 400px;
+    margin-right: 10px;
+}
+
+#right-side {
+
+    height: 350px;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 15px;
+
+}
+
+.points {
+    color: palevioletred;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+#points-heading {
+    font-size: 17px;
+    font-weight: 600;
+    display: inline;
+    margin: 0 0;
+}
+
+#left-side {
+    margin-top: 40px;
+    margin-right: 20px;
+}
